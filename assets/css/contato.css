@@ -1,0 +1,117 @@
+/*
+==============
+    Contato
+==============
+*/
+.contato.corpo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 40vw;
+    background-color: rgb(223, 12, 12);
+    padding: 4rem 1rem;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000080;
+}
+
+@media screen and (max-width: 760px){
+    .card {
+        width: 76vw;
+    }
+}
+@media screen and (max-width: 375px){
+    .card {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 1440px){
+    .card {
+        width: 409.59px;
+    }
+}
+
+.card p {
+    color: white;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.card a {
+    color: #eee;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+.card a:hover {
+    color: rgb(139, 139, 139);
+}
+
+.card form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+input:-internal-autofill-selected {
+    background-color: transparent;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid white;
+}
+
+#usuario {
+    color: white;
+}
+
+.label-float label {
+    color: white;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: white;
+}

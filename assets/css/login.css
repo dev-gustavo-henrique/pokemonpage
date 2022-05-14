@@ -1,0 +1,32 @@
+/*
+==============
+    Login
+==============
+*/
+.login.corpo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login .card .title-contato {
+    margin-bottom: 1rem;
+}
+
+.login hr {
+    margin: 24px 0;
+}
+
+.login .card form p.justify-center {
+    line-height: 33px;
+}
+
+@media screen and (max-width: 425px){
+    .login .card {
+        width: 100vw;
+    }
+}
+@media screen and (min-width: 768px){
+    .login .card {
+        max-width: 328px;
+    }
+}

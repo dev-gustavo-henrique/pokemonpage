@@ -1,0 +1,171 @@
+/*
+==============
+    Home
+==============
+ */
+ .pokemon_home-container {
+    width: 100%;
+    background-image: url(../imagens/pokebolafundo.jpg);
+    padding-bottom: 6rem;
+}
+
+.pokemon_home {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.box_home {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 7px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 8px #000000;
+    overflow: hidden;
+    padding: 1.5%;
+}
+
+#bg-home-1 {
+    background: linear-gradient(90deg, gray, green);
+}
+#bg-home-2 {
+    background: linear-gradient(90deg, gray, red);
+}
+#bg-home-3 {
+    background: linear-gradient(90deg, gray, blue);
+}
+#bg-home-4 {
+    background: linear-gradient(90deg, gray, yellow);
+}
+#bg-home-5 {
+    background: linear-gradient(90deg, gray, rgb(73, 73, 255));
+}
+#bg-home-6 {
+    background: linear-gradient(90deg, gray, brown);
+}
+#bg-home-7 {
+    background: linear-gradient(90deg, red, orange, green, blue, purple);
+}
+#bg-home-8 {
+    background: linear-gradient(90deg, gray, purple);
+}
+#bg-home-9 {
+    background: linear-gradient(90deg, red, orange, green, blue, purple);
+}
+
+.home__img {
+    width: 100%;
+    object-fit: cover;
+    object-fit: contain;
+    height: 200px;
+}
+
+.texto_nome {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    padding-top: 1rem;
+    color: white;
+    text-decoration: brown;
+    text-shadow: 5px 5px 8px #000000;
+}
+
+.texto_box {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: rgb(255, 230, 0);
+    text-shadow: 5px 5px 8px #000000;
+}
+
+.texto_baixo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    color: white;
+}
+
+.botao_compre {
+    width: 100%;
+    background: rgb(202, 131, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.4rem 2rem 0.4rem 2rem;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.botao_compre:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+/*
+==============
+    Box
+    Vantagens
+==============
+ */
+.box_vantagens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+    padding-top: 3rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+}
+
+.texto_video {
+    padding-left: 3rem;
+    padding-right: 5rem;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    line-height: 23px;
+}
+
+.titulo_video {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 2rem;
+    padding-bottom: 1.8rem;
+    line-height: 45px;
+}
+
+.video_abertura {
+    min-width: 500px;
+    min-height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .box_vantagens {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .texto_video {
+        margin-bottom: 2rem;
+    }
+
+    .video_abertura {
+        min-width: 500px;
+        min-height: 200px;
+    }
+}

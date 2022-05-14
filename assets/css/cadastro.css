@@ -1,0 +1,21 @@
+/*
+==============
+    Cadastro
+==============
+*/
+.cadastro {
+    width: 378.88px;
+    padding: 2.5rem 1rem;
+}
+
+.cadastro form .label-float {
+    min-width: 290px;
+}
+
+input#nome:-internal-autofill-selected {
+    background: #df0c0c!important;
+}
+
+#nome {
+    color: white;
+}
